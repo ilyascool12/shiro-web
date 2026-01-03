@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>VALORANT Game Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1923;
+    color: white;
+}
+
+/* Banner */
+header {
+    background: linear-gradient(90deg, #ff4655, #111);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background: #111;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4655;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Content */
+section {
+    padding: 30px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    height: 300px;
+    width: auto;
+    border-radius: 8px;
+    border: 2px solid #ff4655;
+    margin-right: 200px; /*jarak ke samping kanan*/
+}
+
+/* Form */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: #ff4655;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    document.getElementById("jam").innerHTML =
+        waktu.toLocaleTimeString();
+}
+setInterval(tampilWaktu, 1000);
+</script>
+
+</head>
+<body onload="tampilWaktu()">
+
+<header>
+    <h1>VALORANT</h1>
+    <p>Jam Sekarang: <span id="jam"></span></p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tentang game.html">Tentang Game</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h2>Selamat Datang di VALORANT</h2>
+    <p>
+        VALORANT adalah game FPS (First Person Shooter) taktis buatan Riot Games
+        yang menggabungkan kemampuan karakter (Agent) dengan strategi tim.
+    </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Penjelasan Game VALORANT</h2>
+    <p>
+        VALORANT merupakan game 5v5 di mana pemain terbagi menjadi dua tim,
+        yaitu Attacker dan Defender. Setiap pemain memilih Agent dengan skill unik.
+    </p>
+
+    <h3>Tujuan Game VALORANT</h3>
+    <ul>
+        <li>Mencapai 13 ronde kemenangan</li>
+        <li>Attacker menanam Spike</li>
+        <li>Defender menggagalkan atau menjinakkan Spike</li>
+        <li>Menghabisi seluruh tim lawan</li>
+    </ul>
+</section>
+
+    
+    <div class="gallery">
+        <img src="gambar/valo 1.jpeg">
+        <img src="gambar/valo 2.jpeg">
+        <img src="gambar/map valo.jpeg">
+    </div>
+    <p>Gambar Agent dan map pada Valorant.</p>
+</section>
+
+
+
+<footer>
+    <p>© 2026 Muhammad Falya Ilyasa | 251011700814 | 01SIFP015</p>
+</footer>
+
+</body>
+</html>

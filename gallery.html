@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Gallery Agent VALORANT</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1923;
+    color: white;
+}
+
+/* Banner */
+header {
+    background: linear-gradient(90deg, #ff4655, #111);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background: #111;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4655;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Content */
+section {
+    padding: 30px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #111;
+    border: 2px solid #ff4655;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    height: 350px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.card p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #ff4655;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    document.getElementById("jam").innerHTML =
+        waktu.toLocaleTimeString();
+}
+setInterval(tampilWaktu, 1000);
+</script>
+
+</head>
+<body onload="tampilWaktu()">
+
+<header>
+    <h1>Gallery Agent VALORANT</h1>
+    <p>Jam Sekarang: <span id="jam"></span></p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tentang game.html">Tentang Game</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Daftar Agent VALORANT</h2>
+    <div class="gallery">
+
+        <div class="card"><img src="jett valo.jpg"><p>Jett</p></div>
+        <div class="card"><img src="phoenix valo.jpg"><p>Phoenix</p></div>
+        <div class="card"><img src="sage valo.jpg"><p>Sage</p></div>
+        <div class="card"><img src="reyna valo.jpg"><p>Reyna</p></div>
+
+        <div class="card"><img src="brimstone valo.jpg"><p>Brimstone</p></div>
+        <div class="card"><img src="omen valo.jpg"><p>Omen</p></div>
+        <div class="card"><img src="viper valo.jpg"><p>Viper</p></div>
+        <div class="card"><img src="cypher valo.jpg"><p>Cypher</p></div>
+
+        <div class="card"><img src="sova valo.jpg"><p>Sova</p></div>
+        <div class="card"><img src="killjoy valo.jpg"><p>Killjoy</p></div>
+        <div class="card"><img src="raze valo.jpg"><p>Raze</p></div>
+        <div class="card"><img src="breach valo.jpg"><p>Breach</p></div>
+
+        <div class="card"><img src="skye valo.jpg"><p>Skye</p></div>
+        <div class="card"><img src="yoru valo.jpg"><p>Yoru</p></div>
+        <div class="card"><img src="astra valo.jpg"><p>Astra</p></div>
+        <div class="card"><img src="kayo valo.jpg"><p>KAY/O</p></div>
+
+        <div class="card"><img src="chamber valo.jpg"><p>Chamber</p></div>
+        <div class="card"><img src="neon valo.jpg"><p>Neon</p></div>
+        <div class="card"><img src="fade valo.jpg"><p>Fade</p></div>
+        <div class="card"><img src="harbor valo.jpg"><p>Harbor</p></div>
+
+        <div class="card"><img src="gekko valo.jpg"><p>Gekko</p></div>
+        <div class="card"><img src="deadlock valo.jpg"><p>Deadlock</p></div>
+        <div class="card"><img src="iso valo.jpg"><p>Iso</p></div>
+        <div class="card"><img src="clove valo.jpg"><p>Clove</p></div>
+
+        <div class="card"><img src="vyse valo.jpg"><p>Vyse</p></div>
+        <div class="card"><img src="waylay valo.jpg"><p>Waylay</p></div>
+        <div class="card"><img src="tejo valo.jpg"><p>Tejo</p></div>
+        <div class="card"><img src="veto valo.jpg"><p>Veto</p></div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Muhammad Falya Ilyasa | 251011700814 | 01SIFP015</p>
+</footer>
+
+</body>
+</html>

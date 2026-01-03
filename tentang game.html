@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tentang Game VALORANT</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1923;
+    color: white;
+}
+
+/* Banner */
+header {
+    background: linear-gradient(90deg, #ff4655, #111);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background: #111;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4655;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Content */
+section {
+    padding: 30px;
+    line-height: 1.8;
+}
+
+section h2 {
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    document.getElementById("jam").innerHTML =
+        waktu.toLocaleTimeString();
+}
+setInterval(tampilWaktu, 1000);
+</script>
+
+</head>
+<body onload="tampilWaktu()">
+
+<header>
+    <h1>Tentang Game VALORANT</h1>
+    <p>Jam Sekarang: <span id="jam"></span></p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tentang game.html">Tentang Game</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Apa itu VALORANT?</h2>
+    <p>
+        VALORANT adalah game First Person Shooter (FPS) taktis berbasis tim
+        yang dikembangkan oleh Riot Games. Game ini menggabungkan kemampuan
+        menembak yang presisi dengan kemampuan khusus (ability) dari setiap karakter
+        yang disebut Agent.
+    </p>
+
+    <h2>Gameplay VALORANT</h2>
+    <p>
+        VALORANT dimainkan oleh dua tim yang masing-masing berisi 5 pemain.
+        Satu tim berperan sebagai Attacker dan tim lainnya sebagai Defender.
+        Setiap pertandingan terdiri dari beberapa ronde dengan sistem ekonomi
+        dan strategi tim yang kuat.
+    </p>
+
+    <h2>Tujuan Game VALORANT</h2>
+    <ul>
+        <li>Mencapai 13 kemenangan ronde lebih dulu</li>
+        <li>Tim Attacker menanam Spike di area tertentu</li>
+        <li>Tim Defender mencegah penanaman atau menjinakkan Spike</li>
+        <li>Menghabisi seluruh pemain lawan</li>
+    </ul>
+
+    <h2>Alasan VALORANT Populer</h2>
+    <p>
+        VALORANT populer karena mengutamakan kerja sama tim, strategi,
+        dan keterampilan individu. Setiap Agent memiliki peran berbeda seperti
+        Duelist, Controller, Sentinel, dan Initiator.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Muhammad Falya Ilyasa | 251011700814 | 01SIFP015</p>
+</footer>
+
+</body>
+</html>

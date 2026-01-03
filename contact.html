@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Registrasi Game VALORANT</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0f1923;
+    color: white;
+}
+
+/* Banner */
+header {
+    background: linear-gradient(90deg, #ff4655, #111);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background: #111;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4655;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Content */
+section {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Form */
+.form-box {
+    background: #111;
+    border: 2px solid #ff4655;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #ff4655;
+    margin-bottom: 20px;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ff4655;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background: #ff2e3f;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+
+<script>
+function tampilWaktu() {
+    const waktu = new Date();
+    document.getElementById("jam").innerHTML =
+        waktu.toLocaleTimeString();
+}
+setInterval(tampilWaktu, 1000);
+</script>
+
+</head>
+<body onload="tampilWaktu()">
+
+<header>
+    <h1>Registrasi Game VALORANT</h1>
+    <p>Jam Sekarang: <span id="jam"></span></p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="tentang game.html">Tentang Game</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <div class="form-box">
+        <h2>Form Registrasi</h2>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Masukkan Email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Masukkan Password" required>
+
+            <label>Tanggal Lahir</label>
+            <input type="date" required>
+
+            <label>Bulan Lahir</label>
+            <input type="month" required>
+
+            <button type="submit">Registrasi</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Muhammad Falya Ilyasa | 251011700814 | 01SIFP015</p>
+</footer>
+
+</body>
+</html>
